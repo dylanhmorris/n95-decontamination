@@ -1,0 +1,5 @@
+"","models","rhat_max_parm","rhat_max_val","neff_min_parm","neff_min_val"
+"1","out/mcmc_chains/decon_chains.Rds","decay_rate[8]",1.0037382241333,"lp__",0.368528361055815
+"2","out/mcmc_chains/mask_chains.Rds","treatment_effect[2,1]",1.00207367990823,"lp__",0.281746076729347
+"3","out/mcmc_chains/inferred_decon_means_chains.Rds","set_mean_log10_tcid50[59]",1.00365386897182,"lp__",0.279445940281917
+"4","out/mcmc_chains/mask_prior_check_chains.Rds","logit_underlying_integrity[8,1]",1.00219718678377,"logit_mask_intercept_filt_mean",0.361715888420517
