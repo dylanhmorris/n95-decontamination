@@ -1,4 +1,4 @@
-# Assessment of N95 respirator decontamination and re-use for SARS-CoV-2
+# Effectiveness of N95 Respirator Decontamination and Reuse against SARS-CoV-2 Virus
 Robert J. Fischer(1\*), Dylan H. Morris(2), Neeltje van Doremalen(1), Shanda Sarchette(1), M. Jeremiah Matson(1), Claude Kwe Yinda(1), Stephanie N. Seifert(1), Amandine Gamble(3), Brandi N. Williamson(1), Seth D. Judson(4), Emmie de Wit1, James O. Lloyd-Smith3, Vincent J. Munster1
 
 1. Laboratory of Virology, Division of Intramural Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Hamilton, MT, USA
@@ -7,7 +7,7 @@ Robert J. Fischer(1\*), Dylan H. Morris(2), Neeltje van Doremalen(1), Shanda Sar
 4. Dept. of Medecine, University of Washington, Seattle, WA, USA.
 
 ## Repository information
-This repository accompanies the article "Assessment of N95 respirator decontamination and re-use for SARS-CoV-2" (R.J. Fischer et al.). It provides code and data for reproducing all data analysis from the paper and recreating all associated display figures.
+This repository accompanies the article "Effectiveness of N95 Respirator Decontamination and Reuse against SARS-CoV-2 Virus" (R.J. Fischer et al.). It provides code and data for reproducing all data analysis from the paper and recreating all associated display figures.
 
 ## Changelog
 This repository was last updated March 2021 to add bibliographic information for the published article and to ensure that plotting code exactly matches published figure captions. This results in a cosmetic change to [Appendix Figure 1](out/figures/figure_decon_controls.pdf) relative to the published version. There are no other changes, and no conclusions change.
