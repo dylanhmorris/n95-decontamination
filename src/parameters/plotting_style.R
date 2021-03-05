@@ -111,7 +111,7 @@ read_data_for_plotting <- function(data_path) {
 }
 
 
-vector_formats = c(".pdf", ".svg")
+vector_formats = c(".pdf")
 save_plot <- function(outpath, fig, ...){
     cowplot::save_plot(outpath,
                        fig,

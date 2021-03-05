@@ -222,7 +222,7 @@ titer_means_draws <- dat %>%
     inner_join(pos_wells,
                by = "replicate_set_id") %>%
     mutate(time_min = time * 60,
-           detectable = n_pos > 1) %>%
+           detectable = n_pos > 0) %>%
     ungroup() %>%
     filter(material %in% materials_to_include)
 

@@ -128,7 +128,6 @@ CHAIN_PATHS = $(DECON_CHAINS) $(MASK_CHAINS) $(DECON_MEANS_CHAINS) $(MASK_PRIOR_
 
 CHAIN_DIAGNOSTICS = $(OUTPUT)/chain_diagnostics.csv
 
-
 DECON_FIGURES = figure_decon_main.pdf figure_decon_controls.pdf figure_mask_posterior_check.pdf figure_mask_prior_check.pdf figure_decon_masks.pdf figure_decon_dmem.pdf 
 
 FIGURES = $(DECON_FIGURES)
@@ -203,32 +202,32 @@ $(TABLE_DIR)/table_decon.docx: $(SRC)/table_decon.R $(DECON_DATA) $(DECON_CHAINS
 # rules for figure generation
 #####################################
 
-$(FIGURE_DIR)/figure_decon_main.pdf: $(SRC)/figure_decon_main.R $(DECON_DATA) $(MASK_DATA) $(DECON_CHAINS) $(DECON_MEANS_CHAINS) $(MASK_CHAINS) $(PLOT_PARAMS)
+$(FIGURE_DIR)/figure_decon_main.%: $(SRC)/figure_decon_main.R $(DECON_DATA) $(MASK_DATA) $(DECON_CHAINS) $(DECON_MEANS_CHAINS) $(MASK_CHAINS) $(PLOT_PARAMS)
 	$(MKDIR) $(FIGURE_DIR)
 	$(R_COMMAND) $^ $@
 	$(FIG_CLEANUP)
 
-$(FIGURE_DIR)/figure_decon_controls.pdf: $(SRC)/figure_decon_controls.R $(DECON_DATA) $(MASK_DATA) $(DECON_CHAINS) $(DECON_MEANS_CHAINS) $(MASK_CHAINS) $(PLOT_PARAMS)
+$(FIGURE_DIR)/figure_decon_controls.%: $(SRC)/figure_decon_controls.R $(DECON_DATA) $(MASK_DATA) $(DECON_CHAINS) $(DECON_MEANS_CHAINS) $(MASK_CHAINS) $(PLOT_PARAMS)
 	$(MKDIR) $(FIGURE_DIR)
 	$(R_COMMAND) $^ $@
 	$(FIG_CLEANUP)
 
-$(FIGURE_DIR)/figure_decon_dmem.pdf: $(SRC)/figure_decon_dmem.R $(DECON_DATA) $(DECON_CHAINS) $(DECON_MEANS_CHAINS) $(PLOT_PARAMS)
+$(FIGURE_DIR)/figure_decon_dmem.%: $(SRC)/figure_decon_dmem.R $(DECON_DATA) $(DECON_CHAINS) $(DECON_MEANS_CHAINS) $(PLOT_PARAMS)
 	$(MKDIR) $(FIGURE_DIR)
 	$(R_COMMAND) $^ $@
 	$(FIG_CLEANUP)
 
-$(FIGURE_DIR)/figure_decon_masks.pdf: $(SRC)/figure_decon_masks.R $(MASK_DATA) $(MASK_CHAINS) $(PLOT_PARAMS)
+$(FIGURE_DIR)/figure_decon_masks.%: $(SRC)/figure_decon_masks.R $(MASK_DATA) $(MASK_CHAINS) $(PLOT_PARAMS)
 	$(MKDIR) $(FIGURE_DIR)
 	$(R_COMMAND) $^ $@
 	$(FIG_CLEANUP)
 
-$(FIGURE_DIR)/figure_mask_posterior_check.pdf: $(SRC)/figure_mask_pp_check.R $(MASK_DATA) $(MASK_CHAINS) $(PLOT_PARAMS)
+$(FIGURE_DIR)/figure_mask_posterior_check.%: $(SRC)/figure_mask_pp_check.R $(MASK_DATA) $(MASK_CHAINS) $(PLOT_PARAMS)
 	$(MKDIR) $(FIGURE_DIR)
 	$(R_COMMAND) $^ $@
 	$(FIG_CLEANUP)
 
-$(FIGURE_DIR)/figure_mask_prior_check.pdf: $(SRC)/figure_mask_pp_check.R $(MASK_DATA) $(MASK_PRIOR_CHECK_CHAINS) $(PLOT_PARAMS)
+$(FIGURE_DIR)/figure_mask_prior_check.%: $(SRC)/figure_mask_pp_check.R $(MASK_DATA) $(MASK_PRIOR_CHECK_CHAINS) $(PLOT_PARAMS)
 	$(MKDIR) $(FIGURE_DIR)
 	$(R_COMMAND) $^ $@
 	$(FIG_CLEANUP)

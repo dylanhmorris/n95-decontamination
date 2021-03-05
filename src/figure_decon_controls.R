@@ -195,7 +195,7 @@ titer_means_draws <- dat %>%
                by = "replicate_set_id") %>%
     inner_join(pos_wells,
                by = "replicate_set_id") %>%
-    mutate(detectable = n_pos > 1)
+    mutate(detectable = n_pos > 0)
 
 ## check that small and undetectable titers have
 ## higher variance if there are fewer well

@@ -145,7 +145,7 @@ titer_means_draws <- dat %>%
                by = "replicate_set_id") %>%
     inner_join(pos_wells,
                by = "replicate_set_id") %>%
-    mutate(detectable = n_pos > 1) %>%
+    mutate(detectable = n_pos > 0) %>%
     filter(grepl("DMEM", material)) %>%
     mutate(material = material %>%
                recode_factor(

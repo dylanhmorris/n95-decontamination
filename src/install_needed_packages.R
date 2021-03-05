@@ -39,8 +39,7 @@ needed_packages <- c(
     'stats',      # for stable numerics
     'Rcpp',       # for *fast* numerics
     'extrafont',  # for nice plot fonts
-    'viridis'      # for magma color palette
-)
+    'viridis')    # for magma color palette
 
 args <- commandArgs(trailingOnly=TRUE)
 

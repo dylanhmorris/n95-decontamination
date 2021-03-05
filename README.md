@@ -9,37 +9,45 @@ Robert J. Fischer(1\*), Dylan H. Morris(2), Neeltje van Doremalen(1), Shanda Sar
 ## Repository information
 This repository accompanies the article "Assessment of N95 respirator decontamination and re-use for SARS-CoV-2" (R.J. Fischer et al.). It provides code and data for reproducing all data analysis from the paper and recreating all associated display figures.
 
+## Changelog
+This repository was last updated March 2021 to add bibliographic information for the published article and to ensure that plotting code exactly matches published figure captions. This results in a cosmetic change to [Appendix Figure 1](out/figures/figure_decon_controls.pdf) relative to the published version. There are no other changes, and no conclusions change.
+
 ## License and citation information
 If you use the code or data provided here, please make sure to do so in light of the project [license](LICENSE.txt) and please cite our work as below:
 
-- R.J. Fischer et al. Assessment of N95 respirator decontamination and re-use for SARS-CoV-2. 2020.
+Fischer RJ, Morris DH, van Doremalen N, Sarchette S, Matson M, Bushmaker T, et al. Effectiveness of N95 Respirator Decontamination and Reuse against SARS-CoV-2 Virus. Emerg Infect Dis. 2020;26(9):2253-2255. https://dx.doi.org/10.3201/eid2609.201524
 
 Bibtex record:
 ```
 @electronic{fischer2020n95,
-    Author = {
-        Robert J. Fischer and 
-        Dylan H. Morris and
-        Neeltje van Doremalen and 
-        Shanda Sarchette and
-        M. Jeremiah Matson and 
-        Trenton Bushmaker and
-        Claude Kwe Yinda and
-        Stephanie N. Seifert and
-        Amandine Gamble and 
-        Brandi N. Williamson and
-        Seth D. Judson and
-        Emmie de Wit and
-        James O. Lloyd-Smith and 
-        Vincent J. Munster},
-    Title = {Assessment of N95 respirator decontamination and re-use for SARS-CoV-2},
-    Date = {2020},
-    URL = {https://github.com/dylanhmorris/n95-decontamination}
+  title={Effectiveness of N95 respirator decontamination and reuse against SARS-CoV-2 virus},
+  author={Fischer, Robert J and 
+  Morris, Dylan H and 
+  van Doremalen, Neeltje and 
+  Sarchette, Shanda and 
+  Matson, M Jeremiah and 
+  Bushmaker, Trenton and 
+  Yinda, Claude Kwe and 
+  Seifert, Stephanie N and 
+  Gamble, Amandine and 
+  Williamson, Brandi N and
+  Judson, Seth D and
+  de Wit, Emmie and 
+  Lloyd-Smith, James O and 
+  Munster, Vincent J},
+  journal={Emerging infectious diseases},
+  volume={26},
+  number={9},
+  pages={2253},
+  year={2020},
+  DOI = {10.3201/eid2609.201524}
+  URL = {https://github.com/dylanhmorris/n95-decontamination}
 }
 ```
 
 ## Article abstract 
-The unprecedented pandemic of SARS-CoV-2 has created worldwide shortages of personal protective equipment, in particular respiratory protection such as N95 respirators. SARS-CoV-2 transmission is frequently occurring in hospital settings, with numerous reported cases of nosocomial transmission highlighting the vulnerability of healthcare workers. Here, we analyzed four different decontamination methods—UV radiation (260–285 nm), 70ºC heat, 70% ethanol and vaporized hydrogen peroxide (VHP)—for their ability to reduce contamination with infectious SARS-CoV-2 and their effect on N95 respirator function. For each of the decontamination methods, we compared the inactivation rate of SARS-CoV-2 on N95 filter fabric to that on stainless steel, and we used quantitative fit testing to measure the filtration performance of the N95 respirators after each decontamination run and 2 hours of wear.
+The coronavirus pandemic has created worldwide shortages of N95 respirators. We analyzed 4 decontamination methods for effectiveness in deactivating severe acute respiratory syndrome coronavirus 2 virus and effect on respirator function. Our results indicate that N95 respirators can be decontaminated and reused, but the integrity of respirator fit and seal must be maintained.
+
 
 ## Directories
 - ``src``: all code, including data preprocessing, Bayesian model definition and fitting, and results post-processing and figure generation:
